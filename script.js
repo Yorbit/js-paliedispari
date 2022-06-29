@@ -28,6 +28,7 @@ function wordReverse(Word) {
     return wordTurn;
 }
 
+//* PARI E DISPARI *//
 
 const Choice = prompt('Scegli se Pari o Dispari')
 console.log(Choice);
@@ -42,3 +43,19 @@ let sum = Number + cpuNumber;
 console.log(sum);
 
 const determinesEvenOrOdd = evenOrOdd(sum);
+
+if (determinesEvenOrOdd % 2 == 0) {
+
+    console.log('Chi ha scelto PARI, ha vinto');
+
+} else if (determinesEvenOrOdd % 2 !== 0) {
+
+    console.log('Chi ha scelto DISPARI, ha vinto');
+}
+
+function randomNumberCpu(min, max) {
+
+    let randomNum = Math.floor(Math.random() * (max - min) + min);
+
+    return randomNum;
+}
