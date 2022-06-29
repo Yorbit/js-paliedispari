@@ -59,3 +59,17 @@ function randomNumberCpu(min, max) {
 
     return randomNum;
 }
+
+function evenOrOdd(num) {
+
+    if (num % 2 == 0) {
+
+        console.log('Il numero è PARI')
+
+    } else if (num % 2 !== 0) {
+
+        console.log('Il numero è DISPARI')
+
+    }
+    return num;
+}
