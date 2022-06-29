@@ -27,3 +27,18 @@ function wordReverse(Word) {
 
     return wordTurn;
 }
+
+
+const Choice = prompt('Scegli se Pari o Dispari')
+console.log(Choice);
+
+const Number = parseInt(prompt('Inserisci un numero da 1 a 5'));
+console.log(Number);
+
+const cpuNumber = randomNumberCpu(1, 5);
+console.log(cpuNumber);
+
+let sum = Number + cpuNumber;
+console.log(sum);
+
+const determinesEvenOrOdd = evenOrOdd(sum);
