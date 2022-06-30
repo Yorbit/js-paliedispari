@@ -53,6 +53,12 @@ if (determinesEvenOrOdd % 2 == 0) {
     console.log('Chi ha scelto DISPARI, ha vinto');
 }
 
+if ((Choice === "PARI" && sum) || (Choice === "DISPARI" && !sum)) {
+    console.log("Hai Vinto!");
+} else {
+    console.log("Hai Perso!");
+}
+
 function randomNumberCpu(min, max) {
 
     let randomNum = Math.floor(Math.random() * (max - min) + min);
